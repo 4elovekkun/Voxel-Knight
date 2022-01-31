@@ -35,6 +35,9 @@ public class MapController : MonoBehaviour
                 Mathf.Clamp(cameraTransform.position.y - touchDeltaPosition.y * speed * Time.deltaTime, _downLimit - 0.5f, _topLimit + 0.5f),
                 cameraTransform.position.z
                 );
+            if (cameraTransform.position.x > _rightLimit || cameraTransform.position.x < _leftLimit || cameraTransform.position.y > _topLimit || cameraTransform.position.y < _downLimit) {
+                
+            }
             Debug.Log("Ñâàéï");
         }
     }
