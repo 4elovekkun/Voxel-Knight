@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 73fe91fa3c84c574b8663a201efac103
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - locationText: {instanceID: 0}
+  - location_name: {instanceID: 0}
+  - imageLocation: {instanceID: 0}
+  - middleUI: {fileID: 2267251753202080378, guid: 9c2b35dd6763cb643b92d11d5213eae3, type: 3}
+  - locationUI: {fileID: 7752172365846196515, guid: f3b498f653b2c964ea9ca4504fb59db1, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

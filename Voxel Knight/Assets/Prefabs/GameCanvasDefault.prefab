@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 4465520344473673118}
   - component: {fileID: 4465520344473673112}
   - component: {fileID: 4465520344473673119}
+  - component: {fileID: 2256272781713144199}
   m_Layer: 5
   m_Name: Gear
   m_TagString: Untagged
@@ -209,6 +210,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2256272781713144199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4465520344473673117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3c21cded1b3d0419f984d0cb329673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Gear
 --- !u!1 &4465520344517256552
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +368,7 @@ GameObject:
   - component: {fileID: 4465520344903101465}
   - component: {fileID: 4465520344903101467}
   - component: {fileID: 4465520344903101466}
+  - component: {fileID: 1063579367983197974}
   m_Layer: 5
   m_Name: Map
   m_TagString: Untagged
@@ -418,6 +433,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1063579367983197974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4465520344903101464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3c21cded1b3d0419f984d0cb329673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Map
 --- !u!1 &4465520344964777132
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,6 +686,7 @@ GameObject:
   - component: {fileID: 4465520345420818840}
   - component: {fileID: 4465520345420818842}
   - component: {fileID: 4465520345420818841}
+  - component: {fileID: 3812612322946007668}
   m_Layer: 5
   m_Name: Shop
   m_TagString: Untagged
@@ -722,6 +751,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3812612322946007668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4465520345420818847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3c21cded1b3d0419f984d0cb329673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Shop
 --- !u!1 &4465520345476837086
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,6 +775,7 @@ GameObject:
   - component: {fileID: 4465520345476837087}
   - component: {fileID: 4465520345476837081}
   - component: {fileID: 4465520345476837080}
+  - component: {fileID: 5646373763623455533}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -797,6 +840,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5646373763623455533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4465520345476837086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3c21cded1b3d0419f984d0cb329673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Settings
 --- !u!1 &4465520345527996452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1818,6 +1874,7 @@ GameObject:
   - component: {fileID: 4465520346323730167}
   - component: {fileID: 4465520346323730161}
   - component: {fileID: 4465520346323730160}
+  - component: {fileID: 4115924561968607065}
   m_Layer: 5
   m_Name: Craft
   m_TagString: Untagged
@@ -1882,6 +1939,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4115924561968607065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4465520346323730166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3c21cded1b3d0419f984d0cb329673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Craft
 --- !u!1 &4465520346390269324
 GameObject:
   m_ObjectHideFlags: 0
@@ -1895,7 +1965,7 @@ GameObject:
   - component: {fileID: 4465520346390269326}
   - component: {fileID: 4465520346390269325}
   m_Layer: 5
-  m_Name: Game Canvas
+  m_Name: GameCanvasDefault
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

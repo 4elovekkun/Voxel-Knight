@@ -6,6 +6,8 @@ public class SafeAreaController : MonoBehaviour
 {
     public RectTransform rectTopBackground;
     public RectTransform rectBottomBackground;
+    public RectTransform rectPictureLocation;
+    public RectTransform rectBackgroundLocation;
 
     private void Awake()
     {
@@ -33,5 +35,7 @@ public class SafeAreaController : MonoBehaviour
 
         rectBottomBackground.anchorMax = new Vector2(1f, anchorMin.y);
         rectBottomBackground.anchorMin = new Vector2(0f, 0f);
+
+        //rectPictureLocation.anchorMax = ;
     }
 }

@@ -14,31 +14,33 @@ public class MapController : MonoBehaviour
     public float _downLimit;
     private Vector3 minLimitVector;
     private Vector3 maxLimitVector;
+    [SerializeField]
+    float dumping;
 
     public void Start()
     {
         camera = GameObject.FindGameObjectWithTag("MainCamera");
         cameraTransform = camera.GetComponent<Transform>();
-        speed = 0.5f;
+        speed = 0.004f;
         minLimitVector = new Vector3(_leftLimit, _downLimit, cameraTransform.position.z);
         maxLimitVector = new Vector3(_rightLimit, _topLimit, cameraTransform.position.z);
     }
 
     public void FixedUpdate()
     {
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
+        if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Moved)
         {
-            Vector2 touchDeltaPosition = Input.GetTouch(0).deltaPosition;
-            cameraTransform.position = new Vector3
-                (
-                Mathf.Clamp(cameraTransform.position.x - touchDeltaPosition.x * speed * Time.deltaTime, _leftLimit - 0.5f, _rightLimit + 0.5f),
-                Mathf.Clamp(cameraTransform.position.y - touchDeltaPosition.y * speed * Time.deltaTime, _downLimit - 0.5f, _topLimit + 0.5f),
-                cameraTransform.position.z
-                );
-            if (cameraTransform.position.x > _rightLimit || cameraTransform.position.x < _leftLimit || cameraTransform.position.y > _topLimit || cameraTransform.position.y < _downLimit) {
-                
-            }
+            Vector2 touchDeltaPosition = FixTouchDelta(Input.GetTouch(0));
+            cameraTransform.position = new Vector3(cameraTransform.position.x - touchDeltaPosition.x * speed, cameraTransform.position.y - touchDeltaPosition.y * speed, cameraTransform.position.z);
             Debug.Log("Ñâàéï");
         }
+    }
+    private Vector2 FixTouchDelta(Touch aT)
+    {
+        float dt = Time.deltaTime / aT.deltaTime;
+        if (float.IsNaN(dt) || float.IsInfinity(dt))
+            dt = 1.0f;
+
+        return aT.deltaPosition * dt;
     }
 }
